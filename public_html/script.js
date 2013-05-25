@@ -157,6 +157,7 @@ function fetchData() {
         }
 
         refreshTableInfo() ;
+	printTime();
 
     });
 }
@@ -255,9 +256,4 @@ function initialize() {
         fetchData();
         refreshGeneralInfo();
     }, 1000);
-    
-    // Faster timer, smoother things
-    window.setInterval(function() {
-        printTime();
-    }, 250);
 }
